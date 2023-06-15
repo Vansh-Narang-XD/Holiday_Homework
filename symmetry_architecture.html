@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Temple Architecture of India</title>
+    <style>
+	@media (max-width: 767px) {
+	  // Style for devices have width <= 767px; 
+	}
+	@media (max-width: 1023px) and (min-width: 768px) {
+          // Style for devices have width >= 768px and <= 1023px;
+	}
+	@media (min-width: 1024px) {
+  	  // Style for devices have width >= 1024px;
+	}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+	#vanta-canvas {
+	 display: block;
+       	 position: absolute;
+       	 top: 0;
+       	 left: 0;
+       	 width: 100%;
+       	 height: 100%;
+       	 z-index: -1;
+        } 
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            z-index: -1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .title-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: white;
+        }
+
+        .title {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 48px;
+            background: linear-gradient(to right, green, darkgreen, green);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: animateRainbow 5s linear infinite;
+        }
+
+        .symmetrical {
+            color: dark-blue;
+            font-size: 36px;
+            text-align: center;
+        }
+
+       .intro {
+            color: yellow;
+            font-size: 36px;
+            text-align: left;
+            animation: animateColor 5s linear infinite;
+        }
+
+	.list-container {
+            color: white;
+            font-size: 24px;
+            text-align: left;
+            margin-top: 50px;
+        }
+
+        .list-item {
+	    color: yellow;
+            margin-bottom: 20px;
+	    font-size: 30px;
+        }
+
+	.details {
+            color: white;
+            font-size: 18px;
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        .details h1 {
+            color: white;
+            font-size: 25px;
+        }
+
+        .img {
+            width: 500px;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        @keyframes animateBackground {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(100%);
+            }
+        }
+
+        @keyframes animateRainbow {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        @keyframes animateColor {
+            0% {
+                color: cyan;
+            }
+	    33% {
+                color: blue;
+            }
+            66% {
+                color: cyan;
+            }
+            100% {
+                color: blue;
+            }
+	
+	footer {
+	    background-color: brown;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body oncontextmenu="return false">
+    <div class="background">
+	<img src="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/svg/1f6d5.svg" alt="Temple 1" style="width: 150px; height: auto; margin-right: 10px;">
+        <div class="title-container">
+            <h1 class="title">Temple Architecture of India</h1>
+        </div>
+	<img src="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/svg/1f6d5.svg" alt="Temple 1" style="width: 150px; height: auto; margin-right: 10px;">
+        <div id="vanta-canvas"></div>
+    </div>
+
+    <div class="animation"></div>
+
+    <div class="body">
+        <h2 class="symmetrical"><u>Symmetrical Architecture</u></h2>
+        <p class="intro"><br><br><br><br><br>
+            What makes a building or a monument stand out is its architecture. The design of any building gives it the shape and adds to the beauty of the building. Thus, the geometry and the symmetry of the structure give uniqueness to the building or the structure.<br>
+            Let us go on a tour of the structures in India that are spectacular in their designs and have superb symmetry:
+        </p>
+    </div>
+
+    <div class="list-container">
+        <h3 class="list-item">ELLORA CAVES, AURANGABAD, MAHARASHTRA</h3>
+	<div class="details">
+            <h1>The invaluable ensemble of 34 caves at Ellora in the Charanandri hills of western India’s Maharashtra State showcases a spirit of co-existence and religious tolerance through the outstanding architectural activities carried out by the followers of three prominent religions: Buddhism, Brahmanism, and Jainism. The rock-cut activity was carried out in three phases from the 6th century to the 12th century. The earliest caves (caves 1–12), excavated between the 5th and 8th centuries, reflect the Mahayana philosophy of Buddhism then prevalent in this region. The Brahmanical group of caves (caves 13–29), including the renowned Kailasa temple (cave 16), was excavated between the 7th and 10th centuries. The last phase, between the 9th and 12th centuries, saw the excavation of a group of caves (caves 30–34) reflecting Jaina philosophy.</h1>
+        </div>
+        <img src="https://wallpapercave.com/wp/wp9401269.jpg" alt="Ellora Caves" class="img">
+            
+        </div>
+        <h3 class="list-item">HOYSALA TEMPLE, BELAVADI, KARNATAKA</h3>
+	<div class="details">
+            <h1>The Hoysala era is one that contributed enormously to the development of several creative fields as well as spiritual and humanistic thought. During their reign, the Hoysalas built more than 1500 temples all across their empire of which only a little over 100 survive today. Art historians recognize the exceptionally intricate sculptural artistry of the Chennakeshava temple at Belur and the Hoysaleshwara temple at Halebid to be among the masterpieces of South Asian art making the name of Hoysala synonymous with artistic achievement.
+
+In addition to supporting both Shaivite and Vaishnavite sects of Hinduism, the Hoysala rulers gave court recognition and status to Jainism, a religion that prescribes a path of non-violence and self-control as paths to spiritual liberation and emphasizes the equality of all beings.</h1>
+	</div>
+        <img src="https://c1.wallpaperflare.com/preview/546/788/22/temple-hindu-halebidu-hoysala-architecture.jpg" alt="Hoysala Temple" class="img">
+        <h3 class="list-item">JANTAR MANTAR, DELHI</h3>
+	<div class="details">
+	     <h1>Between 1724 and 1730 Maharajah Sawaii Jai Singh II of Jaipur constructed five astronomical observatories in northern India. The observatories, or "Jantar Mantars" as they are commonly known, incorporate multiple buildings of unique form, each with a specialized function for astronomical measurement. These structures with their striking combinations of geometric forms at large scale have captivated the attention of architects, artists, and art historians world wide, yet remain largely unknown to the general public</h1>
+	</div>
+	<img src="data:image/jpeg;base64,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" alt="Jantar Mantar" class="img">
+        <h3 class="list-item">BHOGA NANDEESHWARA TEMPLE, NANDI HILLS, KARNATAKA</h3>
+	<div class="details">
+	     <h1>The Bhoga Nandeeshwara Temple is situated in the village at the foothills of Nandi Hills. Nandi Hills is a popular temple site and picnic spot. The simple Yoga Nandeeshwara Temple on top of the hill is famous for the huge statue of the bull in front of the temple.
+
+Not many people know of the other Nandeeshwara temple, a magnificent, large complex housing not one, but three temples in all.
+
+The original Bhoga Nandeeshwara temple was built in the 9th century. The first phase is believed to have been built by the Bana Queen Ratnavali. The temple then underwent many additions and modifications, spread over the rule of around five dynasties.</h1>
+	</div>
+	<img src="https://img.etimg.com/thumb/msid-65025005,width-1200,height-900,imgsize-276465,overlay-etpanache/photo.jpg" alt="Bhoga Nandeeshwara" class="img">
+    <footer>© Vansh from X-D</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+<script>
+VANTA.CLOUDS({
+  el: "#vanta-canvas",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  skyColor: 0x6890d7,
+  sunColor: 0x830474,
+  sunGlareColor: 0x836860,
+  sunlightColor: 0x32f6ff
+})
+</script>
+</body>
+</html>

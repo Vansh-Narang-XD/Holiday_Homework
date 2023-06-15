@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Architecture of India</title>
+    <style>
+
+	@media (max-width: 767px) {
+	  // Style for devices have width <= 767px; 
+	}
+	@media (max-width: 1023px) and (min-width: 768px) {
+          // Style for devices have width >= 768px and <= 1023px;
+	}
+	@media (min-width: 1024px) {
+  	  // Style for devices have width >= 1024px;
+	}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        #vanta-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            z-index: -1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+         .title-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: white;
+        }
+
+        .title {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 48px;
+            background: linear-gradient(to right, lime, yellow, white);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: animateRainbow 5s linear infinite;
+        }
+
+        @keyframes animateRainbow {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .content-container {
+            margin: 20px;
+            color: white;
+            margin-top: 250px; 
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: peachpuff;
+        }
+
+        .data-box {
+            width: 125px;
+            height: 125px;
+            background-color: #ff6f69;
+            color: white;
+            margin-right: 20px;
+	    margin-top: 100px;
+            padding: 20px;
+            text-align: center;
+            animation: animateBox 2s infinite;
+            transform-origin: center;
+            font-size: 24px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+         @keyframes animateBox {
+            0% {
+                transform: scale(1);
+                background-color: #ff6f69;
+            }
+            50% {
+                transform: scale(1.2);
+                background-color: #ffa07a;
+            }
+            100% {
+                transform: scale(1);
+                background-color: #ff6f69;
+            }
+        }
+
+        .temple-info {
+            color: white;
+            margin: 20px;
+            margin-top: 0;
+            font-size: 30px;
+            animation: animateText 4s linear infinite;
+        }
+
+        @keyframes animateText {
+            0% {
+                color: white;
+            }
+            50% {
+                color: #ff6f69;
+            }
+            100% {
+                color: white;
+            }
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            margin-right: 20px;
+        }
+
+        .image-container.left {
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .image {
+            width: 500px;
+            height: 400px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image:hover {
+            transform: scale(1.1);
+        }
+
+        .category-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-left: 20px;
+            width: 300px;
+        }
+
+        .category-container.right {
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+
+        .category {
+            font-size: 32px;
+            color: lime;
+            margin-left: -600px;
+            animation: animateRainbow 5s linear infinite;
+	}
+	
+	footer {
+	    background-color: brown;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body oncontextmenu="return false">
+    <div class="background">
+	<img src="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/svg/1f6d5.svg" alt="Temple 1" style="width: 150px; height: auto; margin-right: 10px;">
+        <div class="title-container">
+            <h1 class="title">Temple Architecture of India</h1>
+        </div>
+	<img src="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/svg/1f6d5.svg" alt="Temple 1" style="width: 150px; height: auto; margin-right: 10px;">
+        <div id="vanta-canvas"></div>
+    </div>
+    <div class="content-container">
+        <div class="data-box">Total Temples Built:<br>2,00,000</div>
+        <div class="data-box">Total Temples Being Built:<br>3,000</div>
+        <div class="data-box">Total Temples Broken:<br>36,000</div>
+    </div>
+
+    <p class="temple-info"><br><br><br>Indian temples showcase the rich cultural and religious heritage of India. They are known for their intricate architecture, exquisite carvings, and spiritual significance. These temples serve as places of worship and pilgrimage, attracting devotees and tourists from all over the world. The temple architecture of India reflects the diverse regional styles, influenced by different dynasties and time periods. From ancient rock-cut temples to majestic medieval structures and modern architectural marvels, Indian temples offer a glimpse into the country's rich history and religious traditions.</p>
+
+    <div class="content-container">
+        <div class="image-container right">
+            <button onclick="window.location.href ='symmetry_architecture.html';" target="_blank">
+                <img src="data:image/jpeg;base64,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" alt="Symmetrical Architecture" class="image">
+            </button>
+        </div>
+        <div class="category-container left">
+            <h2 class="category"><u>Symmetrical Architecture</u>: This category showcases temples with a symmetrical design, where the elements on one side mirror those on the other, creating a sense of balance and harmony in the architectural composition.<br>(click on the image to learn more about these architectures)</h2>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <div class="image-container left">
+            <button onclick="window.location.href ='science_architecture.html';" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Konarka_Temple.jpg" alt="Architecture Embodying Sciences" class="image">
+            </button>
+        </div>
+        <div class="category-container right">
+            <h2 class="category"><u>Architecture that defy Sciences</u>: These temples are renowned for their architectural brilliance and scientific principles incorporated into their design, such as precise alignment with celestial bodies and intricate geometric patterns.<br>(click on the image to learn more about these architectures)</h2>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <div class="image-container right">
+            <button onclick="window.location.href ='untold_architecture.html';" target="_blank">
+                <img src="https://media.istockphoto.com/id/1343553048/photo/facade-of-gurudwara-sis-ganj-sahib-it-is-one-of-the-nine-historical-gurdwaras-in-delhi.jpg?s=612x612&w=0&k=20&c=FyOKFCuIW0i7L3kvVe25ErhLAh1afLgA3ip_GcHhtlo=" alt="Architecture with Backstories" class="image">
+            </button>
+        </div>
+        <div class="category-container left">
+            <h2 class="category"><u>Architecture with Untold Stories</u>: These temples have fascinating stories and legends associated with their construction, revealing the cultural and historical narratives that enrich their architectural significance.<br>(click on the image to learn more about these architectures)</h2>
+        </div>
+    </div>
+    <footer>© Vansh from X-D</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+<script>
+ VANTA.BIRDS({
+  el: "#vanta-canvas",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00
+})
+</script>
+</body>
+</html>

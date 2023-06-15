@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Temple Architecture of India</title>
+    <style>
+	@media (max-width: 767px) {
+	  // Style for devices have width <= 767px; 
+	}
+	@media (max-width: 1023px) and (min-width: 768px) {
+          // Style for devices have width >= 768px and <= 1023px;
+	}
+	@media (min-width: 1024px) {
+  	  // Style for devices have width >= 1024px;
+	}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+	#vanta-canvas {
+	 display: block;
+       	 position: absolute;
+       	 top: 0;
+       	 left: 0;
+       	 width: 100%;
+       	 height: 100%;
+       	 z-index: -1;
+        } 
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            z-index: -1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .title-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: white;
+        }
+
+        .title {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 48px;
+            background: linear-gradient(to right, green, darkgreen, green);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: animateRainbow 5s linear infinite;
+        }
+
+        .symmetrical {
+            color: dark-blue;
+            font-size: 36px;
+            text-align: center;
+        }
+
+       .intro {
+            color: yellow;
+            font-size: 36px;
+            text-align: left;
+            animation: animateColor 5s linear infinite;
+        }
+
+	.list-container {
+            color: white;
+            font-size: 24px;
+            text-align: left;
+            margin-top: 50px;
+        }
+
+        .list-item {
+	    color: yellow;
+            margin-bottom: 20px;
+	    font-size: 30px;
+        }
+
+	.details {
+            color: white;
+            font-size: 18px;
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        .details h1 {
+            color: white;
+            font-size: 25px;
+        }
+
+        .img {
+            width: 500px;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        @keyframes animateBackground {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(100%);
+            }
+        }
+
+        @keyframes animateRainbow {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        @keyframes animateColor {
+            0% {
+                color: cyan;
+            }
+	    33% {
+                color: blue;
+            }
+            66% {
+                color: cyan;
+            }
+            100% {
+                color: blue;
+            }
+	
+	footer {
+	    background-color: brown;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body oncontextmenu="return false">
+    <div class="background">
+	<img src="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/svg/1f6d5.svg" alt="Temple 1" style="width: 150px; height: auto; margin-right: 10px;">
+        <div class="title-container">
+            <h1 class="title">Temple Architecture of India</h1>
+        </div>
+	<img src="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/svg/1f6d5.svg" alt="Temple 1" style="width: 150px; height: auto; margin-right: 10px;">
+        <div id="vanta-canvas"></div>
+    </div>
+
+    <div class="animation"></div>
+
+    <div class="body">
+        <h2 class="symmetrical"><u>Architecture with Untold Stories</u></h2>
+        <p class="intro"><br><br><br><br><br>
+            India is a land of Gods, no matter in which part of the country you are; you’d have the opportunity to find an interesting temple or a ritual that will certainly blow your mind off. In this blog we are discussing the temples in India that you must have surely heard about but never paid attention to their stories. These temples have been surviving the tides and trials of time but with their charisma have been able to get the attention of those that are full of faith. Hidden underneath the earth, standing tall amidst forests, closed behind huge portals and cornered because of the newly constructed temples, the holy shrines that we are about to discuss here still have the magnetism to attract true devotees from all over the world. Here is the list of 15 temples in India that have something interesting to tell you:
+        </p>
+    </div>
+
+    <div class="list-container">
+        <h3 class="list-item">Gurudwara Sis ganj Sahib, Delhi</h3>
+	<div class="details">
+            <h1>The ninth Sikh Guru, Guru Tegh Bahadur was beheaded here on 11 November 1675 on the order of Aurangzeb. Before his body could be quartered and exposed to public view, it was stolen under the cover of darkness by one of his disciples, Lakhi Shah Vanjara, who then burnt his house to cremate the Guru's body. This place is marked by another gurdwara, Gurdwara Rakab Ganj Sahib. The severed head ("Sis" in Hindi or Punjabi) of Guru Tegh Bahadur was brought to Anandpur Sahib by Bhai Jaita, another disciple of the Guru. Before it was cremated, he took it to Ambala city for a night and there is another gurdwara as well by the name of Shri Sis Ganj Gurdwara near there local vegetable market, Gobind Rai, who would later become Guru Gobind Singh, the tenth and last Guru of the Sikhs.</h1>
+        </div>
+        <img src="https://media.istockphoto.com/id/1248787849/photo/gurudwara-sis-ganj-sahib-new-delhi.jpg?s=612x612&w=0&k=20&c=I4HMvDtAqceRFTCkKa2oD_s_5cV6WNhDrwM-bg6Wb98=" alt="Sisganj" class="img">
+            
+        </div>
+        <h3 class="list-item">Pataleshwar Mahadev Temple, Jaipur</h3>
+	<div class="details">
+            <h1>Believed to be about 400 years old, Pataleshwar Mahadev temple is one of the hidden gems of Jaipur city. Situated in the Rajput Colony of Jhalana Dungri, this Shiva Temple is said to have been excavated in 1977. According to the locals, the temple was buried 20ft under the earth. After continuous efforts of the local, the temple could be excavated and today it stands amidst a well like structure which has 20ft tall walls. There are about 19 stairs to climb down to the temple and close to it a Hanuman temple has also been established which is thronged by a huge devoted crowd during Shivratri.</h1>
+	</div>
+        <img src="https://static2.tripoto.com/media/filter/tst/img/1891611/TripDocument/1580570170_img_20200119_140645.jpg" alt="Pataleshwar Temple" class="img">
+        <h3 class="list-item">Tanot Mata Temple, Jaisalmer</h3>
+	<div class="details">
+	     <h1>Devoted to Goddess Durga, this shrine has an interesting story to tell. The legend goes that during 1965 war between India and Pakistan this temple situated on the border was on the target of the Pakistan army. It is believed that the Pakistan army tried to bombard this place but all their attempts failed. Neither the temple was destroyed nor did the army officials deployed here face any harm. As a proof, the grenades and other weapons used against the Indian army are kept in the temple.</h1>
+	</div>
+	<img src="https://www.tourmyindia.com/blog//wp-content/uploads/2015/10/Tanot-Mata-Temple-Jaisalmer.jpg" alt="Tanot Temple" class="img">
+        <h3 class="list-item">Sri Panakala Lakshmi Narasimhaswamy, Mangalagiri</h3>
+	<div class="details">
+	     <h1>Perched on top of the hill, Sri Panakala Lakshmi Narasimhaswamy is believed to be situated on a volcano, which if ever explodes will take the entire temple and other region around it down. However, the devotees believe that the volcano shall never be active because Lord Vishnu takes care of it. A special Prasadam is offered called Panakam here which is made of jaggery water in faith that Lord Vishnu will never let the volcano explode. The temple is highly revered in the area and has couple of other temples around it.</h1>
+	</div>
+	<img src= "https://www.tourmyindia.com/blog//wp-content/uploads/2015/10/Sri-Panakala-Lakshmi-Narasimhaswamy-Mangalagiri.jpg" alt="Mangalagiri" class="img">
+
+    <footer>© Vansh from X-D</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+<script>
+VANTA.CLOUDS({
+  el: "#vanta-canvas",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  skyColor: 0x6890d7,
+  sunColor: 0x830474,
+  sunGlareColor: 0x836860,
+  sunlightColor: 0x32f6ff
+})
+</script>
+</body>
+</html>
